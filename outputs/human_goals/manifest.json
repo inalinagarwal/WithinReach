@@ -1,0 +1,17 @@
+[
+  {
+    "video": "pushing_thenrotating.MOV",
+    "goal": "pushing_thenrotating_goal.json",
+    "plan": "pushing_thenrotating_plan.json"
+  },
+  {
+    "video": "pushing_rotatinginotherdirection.MOV",
+    "goal": "pushing_rotatinginotherdirection_goal.json",
+    "plan": "pushing_rotatinginotherdirection_plan.json"
+  },
+  {
+    "video": "pushing_and_rotating_sametime.MOV",
+    "goal": "pushing_and_rotating_sametime_goal.json",
+    "plan": "pushing_and_rotating_sametime_plan.json"
+  }
+]

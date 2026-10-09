@@ -1,0 +1,28 @@
+{
+  "split": "test",
+  "transitions": 84,
+  "episodes": 28,
+  "models": {
+    "no_motion": {
+      "position_mae_mm": 37.551405482447116,
+      "angle_mae_deg": 22.102823937651447,
+      "position_p90_mm": 58.91079712652954,
+      "open_loop_final_position_mm": 71.14192734881551,
+      "open_loop_final_angle_deg": 62.71049578238836
+    },
+    "half_travel_no_rotation": {
+      "position_mae_mm": 20.480773150952558,
+      "angle_mae_deg": 22.102823937651447,
+      "position_p90_mm": 29.96768612275996,
+      "open_loop_final_position_mm": 36.997200294784484,
+      "open_loop_final_angle_deg": 62.71049578238836
+    },
+    "outputs/sim_elevated.pt": {
+      "position_mae_mm": 14.595268249511719,
+      "angle_mae_deg": 17.09346580505371,
+      "position_p90_mm": 29.472566604614258,
+      "open_loop_final_position_mm": 30.207244339462896,
+      "open_loop_final_angle_deg": 46.4023937215634
+    }
+  }
+}

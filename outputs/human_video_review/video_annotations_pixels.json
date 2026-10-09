@@ -1,0 +1,734 @@
+{
+  "schema": "within_reach.image_space_review.v1",
+  "status": "DRAFT, manually reviewed pixel annotations",
+  "coordinate_system": "original 1920x1080 image pixels; x right, y down",
+  "caveats": [
+    "Not compatible with metric human.jsonl until calibrated; no metre coordinates have been invented.",
+    "Manual landmarks and segment boundaries are approximate, not frame-exact tracking.",
+    "Moving camera makes image displacements unsuitable as physical cup displacements.",
+    "Handle landmark is at a different height from cup base; arrow is not world yaw.",
+    "Hand contacts are often on the handle with multiple fingers, not a single robot-equivalent fingertip.",
+    "Base centre is inferred from the visible silhouette and has lower confidence.",
+    "No preferred hand or desired final placement has been confirmed by the applicant.",
+    "Tipping/off-table events are failure evidence, not upright world-model training transitions."
+  ],
+  "videos": [
+    {
+      "video": "pushing_thenrotating.MOV",
+      "episode": "human-pushing_thenrotating",
+      "split": "train",
+      "fps": 30.0,
+      "frame_count": 249,
+      "image_size": [
+        1920,
+        1080
+      ],
+      "outcome": "upright",
+      "metric_ready": false,
+      "camera_motion_observed": true,
+      "segments": [
+        {
+          "start_frame": 55,
+          "end_frame": 110,
+          "label": "predominantly sliding",
+          "upright": true
+        },
+        {
+          "start_frame": 133,
+          "end_frame": 180,
+          "label": "handle-driven rotation with some translation",
+          "upright": true
+        },
+        {
+          "start_frame": 202,
+          "end_frame": 248,
+          "label": "final upright placement",
+          "upright": true
+        }
+      ],
+      "frames": [
+        {
+          "frame": 55,
+          "time_seconds": 1.8333333333333333,
+          "landmarks": {
+            "rim_center_px": [
+              1350,
+              308
+            ],
+            "base_projection_estimate_px": [
+              1314,
+              556
+            ],
+            "handle_point_px": [
+              1556,
+              458
+            ],
+            "contact_estimate_px": [
+              1498,
+              374
+            ]
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": true
+        },
+        {
+          "frame": 110,
+          "time_seconds": 3.6666666666666665,
+          "landmarks": {
+            "rim_center_px": [
+              680,
+              448
+            ],
+            "base_projection_estimate_px": [
+              680,
+              738
+            ],
+            "handle_point_px": [
+              888,
+              646
+            ],
+            "contact_estimate_px": [
+              862,
+              570
+            ]
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": true
+        },
+        {
+          "frame": 133,
+          "time_seconds": 4.433333333333334,
+          "landmarks": {
+            "rim_center_px": [
+              690,
+              456
+            ],
+            "base_projection_estimate_px": [
+              680,
+              738
+            ],
+            "handle_point_px": [
+              908,
+              646
+            ],
+            "contact_estimate_px": [
+              976,
+              684
+            ]
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": true
+        },
+        {
+          "frame": 157,
+          "time_seconds": 5.233333333333333,
+          "landmarks": {
+            "rim_center_px": [
+              660,
+              476
+            ],
+            "base_projection_estimate_px": [
+              656,
+              752
+            ],
+            "handle_point_px": [
+              714,
+              744
+            ],
+            "contact_estimate_px": [
+              766,
+              798
+            ]
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": true
+        },
+        {
+          "frame": 180,
+          "time_seconds": 6.0,
+          "landmarks": {
+            "rim_center_px": [
+              582,
+              478
+            ],
+            "base_projection_estimate_px": [
+              598,
+              746
+            ],
+            "handle_point_px": [
+              418,
+              726
+            ],
+            "contact_estimate_px": [
+              476,
+              754
+            ]
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": true
+        },
+        {
+          "frame": 202,
+          "time_seconds": 6.733333333333333,
+          "landmarks": {
+            "rim_center_px": [
+              518,
+              430
+            ],
+            "base_projection_estimate_px": [
+              558,
+              738
+            ],
+            "handle_point_px": [
+              362,
+              704
+            ],
+            "contact_estimate_px": null
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": true
+        }
+      ]
+    },
+    {
+      "video": "pushing_rotatinginotherdirection.MOV",
+      "episode": "human-pushing_rotatinginotherdirection",
+      "split": "train",
+      "fps": 30.0,
+      "frame_count": 218,
+      "image_size": [
+        1920,
+        1080
+      ],
+      "outcome": "upright",
+      "metric_ready": false,
+      "camera_motion_observed": true,
+      "segments": [
+        {
+          "start_frame": 48,
+          "end_frame": 99,
+          "label": "predominantly sliding",
+          "upright": true
+        },
+        {
+          "start_frame": 157,
+          "end_frame": 179,
+          "label": "handle-driven rotation with some translation",
+          "upright": true
+        },
+        {
+          "start_frame": 197,
+          "end_frame": 217,
+          "label": "final upright placement",
+          "upright": true
+        }
+      ],
+      "frames": [
+        {
+          "frame": 48,
+          "time_seconds": 1.6,
+          "landmarks": {
+            "rim_center_px": [
+              1432,
+              406
+            ],
+            "base_projection_estimate_px": [
+              1410,
+              654
+            ],
+            "handle_point_px": [
+              1594,
+              570
+            ],
+            "contact_estimate_px": [
+              1590,
+              472
+            ]
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": true
+        },
+        {
+          "frame": 99,
+          "time_seconds": 3.3,
+          "landmarks": {
+            "rim_center_px": [
+              836,
+              590
+            ],
+            "base_projection_estimate_px": [
+              834,
+              886
+            ],
+            "handle_point_px": [
+              1018,
+              808
+            ],
+            "contact_estimate_px": [
+              1014,
+              640
+            ]
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": true
+        },
+        {
+          "frame": 133,
+          "time_seconds": 4.433333333333334,
+          "landmarks": {
+            "rim_center_px": [
+              750,
+              550
+            ],
+            "base_projection_estimate_px": [
+              734,
+              830
+            ],
+            "handle_point_px": [
+              922,
+              776
+            ],
+            "contact_estimate_px": null
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": true
+        },
+        {
+          "frame": 157,
+          "time_seconds": 5.233333333333333,
+          "landmarks": {
+            "rim_center_px": [
+              738,
+              540
+            ],
+            "base_projection_estimate_px": [
+              728,
+              830
+            ],
+            "handle_point_px": [
+              936,
+              764
+            ],
+            "contact_estimate_px": [
+              952,
+              794
+            ]
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": true
+        },
+        {
+          "frame": 179,
+          "time_seconds": 5.966666666666667,
+          "landmarks": {
+            "rim_center_px": [
+              796,
+              688
+            ],
+            "base_projection_estimate_px": [
+              798,
+              974
+            ],
+            "handle_point_px": [
+              1006,
+              560
+            ],
+            "contact_estimate_px": [
+              1062,
+              538
+            ]
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": true
+        },
+        {
+          "frame": 197,
+          "time_seconds": 6.566666666666666,
+          "landmarks": {
+            "rim_center_px": [
+              744,
+              548
+            ],
+            "base_projection_estimate_px": [
+              740,
+              836
+            ],
+            "handle_point_px": [
+              970,
+              546
+            ],
+            "contact_estimate_px": null
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": true
+        }
+      ]
+    },
+    {
+      "video": "pushing_and_rotating_sametime.MOV",
+      "episode": "human-pushing_and_rotating_sametime",
+      "split": "test",
+      "fps": 29.99400119976005,
+      "frame_count": 250,
+      "image_size": [
+        1920,
+        1080
+      ],
+      "outcome": "upright",
+      "metric_ready": false,
+      "camera_motion_observed": true,
+      "segments": [
+        {
+          "start_frame": 50,
+          "end_frame": 80,
+          "label": "coupled sliding and rotation",
+          "upright": true
+        },
+        {
+          "start_frame": 130,
+          "end_frame": 160,
+          "label": "coupled sliding and rotation",
+          "upright": true
+        },
+        {
+          "start_frame": 199,
+          "end_frame": 225,
+          "label": "final adjustment; end contact not visible",
+          "upright": true
+        }
+      ],
+      "frames": [
+        {
+          "frame": 50,
+          "time_seconds": 1.667,
+          "landmarks": {
+            "rim_center_px": [
+              1502,
+              380
+            ],
+            "base_projection_estimate_px": [
+              1466,
+              628
+            ],
+            "handle_point_px": [
+              1666,
+              550
+            ],
+            "contact_estimate_px": [
+              1670,
+              460
+            ]
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": true
+        },
+        {
+          "frame": 80,
+          "time_seconds": 2.6672,
+          "landmarks": {
+            "rim_center_px": [
+              1494,
+              506
+            ],
+            "base_projection_estimate_px": [
+              1438,
+              772
+            ],
+            "handle_point_px": [
+              1280,
+              662
+            ],
+            "contact_estimate_px": [
+              1240,
+              696
+            ]
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": true
+        },
+        {
+          "frame": 100,
+          "time_seconds": 3.334,
+          "landmarks": {
+            "rim_center_px": [
+              1398,
+              584
+            ],
+            "base_projection_estimate_px": [
+              1334,
+              858
+            ],
+            "handle_point_px": [
+              1114,
+              664
+            ],
+            "contact_estimate_px": null
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": true
+        },
+        {
+          "frame": 130,
+          "time_seconds": 4.3342,
+          "landmarks": {
+            "rim_center_px": [
+              1322,
+              574
+            ],
+            "base_projection_estimate_px": [
+              1286,
+              860
+            ],
+            "handle_point_px": [
+              1062,
+              626
+            ],
+            "contact_estimate_px": [
+              1470,
+              624
+            ]
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": true
+        },
+        {
+          "frame": 160,
+          "time_seconds": 5.3344,
+          "landmarks": {
+            "rim_center_px": [
+              1012,
+              636
+            ],
+            "base_projection_estimate_px": [
+              1004,
+              886
+            ],
+            "handle_point_px": [
+              1204,
+              572
+            ],
+            "contact_estimate_px": [
+              952,
+              850
+            ]
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": true
+        },
+        {
+          "frame": 199,
+          "time_seconds": 6.634659999999999,
+          "landmarks": {
+            "rim_center_px": [
+              936,
+              580
+            ],
+            "base_projection_estimate_px": [
+              936,
+              848
+            ],
+            "handle_point_px": [
+              1158,
+              638
+            ],
+            "contact_estimate_px": [
+              1114,
+              738
+            ]
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": true
+        },
+        {
+          "frame": 225,
+          "time_seconds": 7.5015,
+          "landmarks": {
+            "rim_center_px": [
+              840,
+              524
+            ],
+            "base_projection_estimate_px": [
+              854,
+              806
+            ],
+            "handle_point_px": [
+              1032,
+              730
+            ],
+            "contact_estimate_px": null
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": true
+        }
+      ]
+    },
+    {
+      "video": "pushing_off_table.MOV",
+      "episode": "human-pushing_off_table",
+      "split": "excluded_failure",
+      "fps": 30.0,
+      "frame_count": 188,
+      "image_size": [
+        1920,
+        1080
+      ],
+      "outcome": "off_table",
+      "metric_ready": false,
+      "camera_motion_observed": true,
+      "segments": [
+        {
+          "start_frame": 136,
+          "end_frame": 153,
+          "label": "crosses table edge and falls out of view",
+          "upright": null
+        },
+        {
+          "start_frame": 153,
+          "end_frame": 187,
+          "label": "object out of view",
+          "upright": null
+        }
+      ],
+      "frames": [
+        {
+          "frame": 136,
+          "time_seconds": 4.533333333333333,
+          "landmarks": {
+            "rim_center_px": [
+              1620,
+              714
+            ],
+            "base_projection_estimate_px": null,
+            "handle_point_px": [
+              1796,
+              978
+            ],
+            "contact_estimate_px": [
+              1662,
+              528
+            ]
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": null
+        },
+        {
+          "frame": 153,
+          "time_seconds": 5.1,
+          "landmarks": {
+            "rim_center_px": null,
+            "base_projection_estimate_px": null,
+            "handle_point_px": null,
+            "contact_estimate_px": null
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": null
+        },
+        {
+          "frame": 170,
+          "time_seconds": 5.666666666666667,
+          "landmarks": {
+            "rim_center_px": null,
+            "base_projection_estimate_px": null,
+            "handle_point_px": null,
+            "contact_estimate_px": null
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": null
+        }
+      ]
+    },
+    {
+      "video": "tipping_on_table.MOV",
+      "episode": "human-tipping_on_table",
+      "split": "excluded_failure",
+      "fps": 30.0,
+      "frame_count": 215,
+      "image_size": [
+        1920,
+        1080
+      ],
+      "outcome": "tipped",
+      "metric_ready": false,
+      "camera_motion_observed": true,
+      "segments": [
+        {
+          "start_frame": 116,
+          "end_frame": 136,
+          "label": "upright-to-tipping transition",
+          "upright": false
+        },
+        {
+          "start_frame": 155,
+          "end_frame": 214,
+          "label": "cup lying on its side; later touched by hand",
+          "upright": false
+        }
+      ],
+      "frames": [
+        {
+          "frame": 116,
+          "time_seconds": 3.8666666666666667,
+          "landmarks": {
+            "rim_center_px": [
+              934,
+              514
+            ],
+            "base_projection_estimate_px": [
+              926,
+              804
+            ],
+            "handle_point_px": [
+              1046,
+              780
+            ],
+            "contact_estimate_px": [
+              1046,
+              884
+            ]
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": true
+        },
+        {
+          "frame": 136,
+          "time_seconds": 4.533333333333333,
+          "landmarks": {
+            "rim_center_px": [
+              782,
+              488
+            ],
+            "base_projection_estimate_px": null,
+            "handle_point_px": [
+              1018,
+              482
+            ],
+            "contact_estimate_px": [
+              1058,
+              554
+            ]
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": false
+        },
+        {
+          "frame": 155,
+          "time_seconds": 5.166666666666667,
+          "landmarks": {
+            "rim_center_px": [
+              900,
+              798
+            ],
+            "base_projection_estimate_px": null,
+            "handle_point_px": [
+              800,
+              490
+            ],
+            "contact_estimate_px": null
+          },
+          "confidence": "manual approximate; base/contact lower confidence than visible rim/handle",
+          "upright": false
+        }
+      ]
+    }
+  ]
+}

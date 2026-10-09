@@ -1,0 +1,30 @@
+{
+  "x": -0.0975,
+  "y": 0.0,
+  "yaw": 0.0,
+  "half_width": 0.05,
+  "half_depth": 0.05,
+  "angle_tolerance_deg": 30,
+  "source": "coarse applicant-video goal retargeting",
+  "provenance": {
+    "video": "pushing_and_rotating_sametime.MOV",
+    "episode": "human-pushing_and_rotating_sametime",
+    "annotations": "outputs/human_video_review/video_annotations_pixels.json",
+    "annotations_sha256": "f8652ec6c61d4ec0ca1e314204c749fd4710a16c9c333edf0a7f73fa021f8e5c",
+    "first_frame": 50,
+    "final_frame": 225,
+    "gross_slide_screen_direction": "left",
+    "final_handle_screen_side": "right",
+    "confidence": "coarse manually reviewed screen cues; camera motion is a confound",
+    "transfer": "image-left/right assigned to simulator -x/+x; no metric reconstruction",
+    "designed_slide_distance_m": 0.0975,
+    "human_cup_diameter_m": 0.065,
+    "human_cup_height_m": 0.08,
+    "limitations": [
+      "Camera motion prevents calibrated physical translation/yaw recovery.",
+      "Simulator displacement is designed at 1.5 cup diameters by default.",
+      "Screen-side orientation is reduced to left/right, losing depth direction.",
+      "No demonstrated reachable region or clinically validated accessibility."
+    ]
+  }
+}
